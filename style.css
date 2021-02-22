@@ -33,7 +33,7 @@ h2 {
 /* HEADER ===================== */
 header {
     background: #2d4a22;
-    padding: 5rem 0;
+    padding: 5rem 0 10rem;
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ header {
 
 /* BALANCE ===================== */
 #balance {
-    margin-top: -5.3rem;
+    margin-top: -8rem;
 }
 
 #balance h2 {
@@ -81,38 +81,57 @@ header {
 
 
 /* TRANSACTIONS ===================== */
-#data-table {
+#datatable {
     width: 100%;
-    border-spacing: 0 0.5;
+    border-spacing: 0 0.5rem;
     color: #969cb3;
 }
-
-table th {
-    background: white;
-    opacity: 0.6;
-    font-weight: normal;
-    padding: 1rem 2rem;
-    text-align: left;
-  
-    
-}
-
-table td {
-    background: white;
-
-    padding: 1rem 2rem;
-
-    
-}
-
 
 table thead tr:first-child,
 table tbody tr:first-child  {
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
+table thead th {
+    background: white;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;  
+}
+
+table tbody tr {
+    opacity: 0.7;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table tbody td {
+    background: white;
+
+    padding: 1rem 2rem;
+    text-align: left;  
+}
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.income {
+    color: #12a454;
+}
+
+td.expense {
+    color: #e92929;
+}
+
 
 /* FOOTER ===================== */
 footer {
     text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+
+    opacity: 0.6;
 }
